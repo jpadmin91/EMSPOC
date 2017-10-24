@@ -11,7 +11,7 @@ phases:
       - apt-get install -y maven
   build:
     commands:
-      - mvn clean install
+      - mvn install
 artifacts:
   files:
     - target/*.war
