@@ -1,0 +1,17 @@
+version: 0.1
+
+env:
+  variables:
+    JAVA_HOME: "/usr/lib/jvm/java-8-openjdk-amd64"
+
+phases:
+  install:
+    commands:
+      - apt-get update -y
+      - apt-get install -y maven
+  build:
+    commands:
+      - mvn clean install
+artifacts:
+  files:
+    - target/*.war
