@@ -20,5 +20,5 @@ phases:
       - echo Build completed on `date`
 artifacts:
   files: 
-    - target/EmployeeApplication.war
+    - target/EMS-0.0.1-SNAPSHOT.war
   discard-paths: yes
